@@ -18,9 +18,9 @@ L2_Test(x, z, y, estimate.method, split.num = 1, is.PE = FALSE, threshold.type =
 - `z`: A matrix of n*p2, where p2 is the dimension of potential nuisance variables.
 - `y`: The response variable, with length n.
 - `estimate.method`: The method used to estimate the high-dimensional nuisance function `g`. The options are `"Lasso"` or `"RF"`.
-- `split.num`: the number of data-splitting. The default value is 1, indicating no multiple data-splitting is used.
+- `split.num`: The number of data-splitting. The default value is 1, indicating single data-splitting procedure is used.
 - `is.PE`: A logical value specifying whether the power enhancement is used. The default value is `FALSE`.
-- `threshold.type`: The type of thresholding to use in the power enhancement step. The options are `"hard"` or `"soft"`. If `"hard"`, the hard thresholding is used, and if `"soft"`, the soft thresholding is used.
+- `threshold.type`: The type of thresholding to use in the power enhancement procedure. The options are `hard` or `soft`. If `hard`, the hard thresholding is used, and if `soft`, the soft thresholding is used.
 - `lambda`: The tuning parameter for the power enhancement procedure with the hard threshold.
 - `boots.num`: The tuning parameter for the power enhancement procedure with the soft threshold.
 - `a.np`: The tuning parameter for the power enhancement procedure.
