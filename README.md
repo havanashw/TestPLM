@@ -56,7 +56,6 @@ data.H0 <- Gene_Data(N=200, p1=500, p2=500, s1=100, c1=0, s2=20, c2=0.5, seed.ra
 data.H1 <- Gene_Data(N=200, p1=500, p2=500, s1=1, c1=1, s2=20, c2=0.5, seed.rand=13579)
 
 ## test H0: beta=0
-# single data-splitting procedure
 pval.single.H0 <- L2_Test(x=data.H0$x, z=data.H0$z, y=data.H0$y, estimate.method="Lasso", split.num=1, seed.fix=0218)
 pval.PE.hard.single.H0 <- L2_Test(x=data.H0$x, z=data.H0$z, y=data.H0$y, estimate.method="Lasso", split.num=1, 
                                   is.PE=TRUE, threshold.type="hard", lambda=0.9, a.np=5, seed.fix=0218)
@@ -64,7 +63,6 @@ pval.PE.soft.single.H0 <- L2_Test(x=data.H0$x, z=data.H0$z, y=data.H0$y, estimat
                                   is.PE=TRUE, threshold.type="soft", boots.num=30, a.np=5, seed.fix=0218)
                                   
 ## test H1: beta≠0
-# single data-splitting procedure
 pval.single.H1 <- L2_Test(x=data.H1$x, z=data.H1$z, y=data.H1$y, estimate.method="Lasso", split.num=1, seed.fix=0218)
 pval.PE.hard.single.H1 <- L2_Test(x=data.H1$x, z=data.H1$z, y=data.H1$y, estimate.method="Lasso", split.num=1, 
                                   is.PE=TRUE, threshold.type="hard", lambda=0.9, a.np=5, seed.fix=0218)
