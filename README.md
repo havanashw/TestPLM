@@ -13,7 +13,7 @@ L2_Test(x, z, y, estimate.method, split.num = 1, is.PE = FALSE, threshold.type =
 - `MASS`
 - `randomForest`
 
-## Inputs:
+## Inputs
 
 - `x`: A matrix of n*p1, where n is the sample size and p1 is the dimension of interested covariates.
 - `z`: A matrix of n*p2, where p2 is the dimension of potential nuisance variables.
@@ -27,7 +27,7 @@ L2_Test(x, z, y, estimate.method, split.num = 1, is.PE = FALSE, threshold.type =
 - `a.np`: The tuning parameter for the power enhancement procedure.
 - `seed.fix`: The fixed seed.
 
-## Examples:
+## Examples
 
 ```{R}
 library(glmnet)
