@@ -61,13 +61,7 @@ pval.PE.hard.single.H0 <- L2_Test(x=data.H0$x, z=data.H0$z, y=data.H0$y, estimat
                                   is.PE=TRUE, threshold.type="hard", lambda=0.9, a.np=5, seed.fix=0218)
 pval.PE.soft.single.H0 <- L2_Test(x=data.H0$x, z=data.H0$z, y=data.H0$y, estimate.method="Lasso", split.num=1, 
                                   is.PE=TRUE, threshold.type="soft", boots.num=30, a.np=5, seed.fix=0218)
-# # multiple data-splitting procedure
-# pval.multi.H0 <- L2_Test(x=data.H0$x, z=data.H0$z, y=data.H0$y, estimate.method="Lasso", split.num=30, seed.fix=0218)
-# pval.PE.hard.multi.H0 <- L2_Test(x=data.H0$x, z=data.H0$z, y=data.H0$y, estimate.method="Lasso", split.num=30, 
-#                                   is.PE=TRUE, threshold.type="hard", lambda=0.9, a.np=5, seed.fix=0218)
-# pval.PE.soft.multi.H0 <- L2_Test(x=data.H0$x, z=data.H0$z, y=data.H0$y, estimate.method="Lasso", split.num=30, 
-#                                   is.PE=TRUE, threshold.type="soft", boots.num=30, a.np=5, seed.fix=0218)
-
+                                  
 ## test H1: beta≠0
 # single data-splitting procedure
 pval.single.H1 <- L2_Test(x=data.H1$x, z=data.H1$z, y=data.H1$y, estimate.method="Lasso", split.num=1, seed.fix=0218)
@@ -75,10 +69,4 @@ pval.PE.hard.single.H1 <- L2_Test(x=data.H1$x, z=data.H1$z, y=data.H1$y, estimat
                                   is.PE=TRUE, threshold.type="hard", lambda=0.9, a.np=5, seed.fix=0218)
 pval.PE.soft.single.H1 <- L2_Test(x=data.H1$x, z=data.H1$z, y=data.H1$y, estimate.method="Lasso", split.num=1, 
                                   is.PE=TRUE, threshold.type="soft", boots.num=30, a.np=5, seed.fix=0218)
-# # multiple data-splitting procedure
-# pval.multi.H1 <- L2_Test(x=data.H1$x, z=data.H1$z, y=data.H1$y, estimate.method="Lasso", split.num=30, seed.fix=0218)
-# pval.PE.hard.multi.H1 <- L2_Test(x=data.H1$x, z=data.H1$z, y=data.H1$y, estimate.method="Lasso", split.num=30, 
-#                                   is.PE=TRUE, threshold.type="hard", lambda=0.9, a.np=5, seed.fix=0218)
-# pval.PE.soft.multi.H1 <- L2_Test(x=data.H1$x, z=data.H1$z, y=data.H1$y, estimate.method="Lasso", split.num=30, 
-#                                   is.PE=TRUE, threshold.type="soft", boots.num=30, a.np=5, seed.fix=0218)
 ```
