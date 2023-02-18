@@ -15,9 +15,9 @@ L2_Test(x, z, y, estimate.method, split.num = 1, is.PE = FALSE, threshold.type =
 
 ## Inputs
 
-- `x`: A matrix of n*p1, where n is the sample size and p1 is the dimension of interested covariates.
-- `z`: A matrix of n*p2, where p2 is the dimension of potential nuisance variables.
-- `y`: The response variable, with length n.
+- `x`: A matrix of N*p1, where N is the sample size and p1 is the dimension of interested covariates.
+- `z`: A matrix of N*p2, where p2 is the dimension of potential nuisance variables.
+- `y`: The response variable, with length N.
 - `estimate.method`: The method used to estimate the high-dimensional nuisance function `g`. The options are `"Lasso"` or `"RF"`.
 - `split.num`: The number of data-splitting. The default value is 1, indicating single data-splitting procedure is used.
 - `is.PE`: A logical value specifying whether the power enhancement is used. The default value is `FALSE`.
