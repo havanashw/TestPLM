@@ -4,7 +4,8 @@ R code for "Tests for ultrahigh-dimensional partially linear regression models."
 ## Usage
 
 ```{R}
-L2_Test(x, z, y, estimate.method, split.num = 1, is.PE = FALSE, threshold.type = NULL, lambda = NULL, boots.num = NULL, a.np = NULL, seed.fix)
+L2_Test(x, z, y, estimate.method, split.num = 1, is.PE = FALSE, threshold.type = NULL, 
+        lambda = NULL, boots.num = NULL, a.np = NULL, seed.fix)
 ```
 
 ## Required Packages
