@@ -1,5 +1,4 @@
 library(glmnet)
-library(MASS)
 library(randomForest)
 
 L2_Test <- function(x, z, y, estimate.method, split.num=1, is.PE=FALSE, threshold.type=NULL, 
