@@ -10,7 +10,6 @@ L2_Test(x, z, y, estimate.method, split.num = 1, is.PE = FALSE, threshold.type =
 
 ## Required Packages
 - `glmnet`
-- `MASS`
 - `randomForest`
 
 ## Inputs
@@ -31,8 +30,8 @@ L2_Test(x, z, y, estimate.method, split.num = 1, is.PE = FALSE, threshold.type =
 
 ```{R}
 library(glmnet)
-library(MASS)
 library(randomForest)
+library(MASS)
 source("TestPLM.R")
 
 ## generate data
