@@ -1,5 +1,5 @@
 # TestPLM
-R code for "Tests for ultrahigh-dimensional partially linear regression models".
+R code for "Tests for high-dimensional partially linear regression models".
 
 ## Usage
 
